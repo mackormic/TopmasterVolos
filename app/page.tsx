@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profileImg from "@/public/images/developer-pic-1.png";
-import myprofileImg from "/public/images/1.png";
+import myprofileImg from "@/public/Images/1.png";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";

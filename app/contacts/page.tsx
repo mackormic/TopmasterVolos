@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contactImg from "/public/images/contactsImg/12.png";
+import contactImg from "@/public/Images/contactsImg/12.png";
 
 import LayoutWrapper from "@/components/LayoutWrapper";
 import AnimatedText from "@/components/AnimatedText";
