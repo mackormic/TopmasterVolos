@@ -4,7 +4,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import AnimatedText from "@/components/AnimatedText";
 import LayoutWrapper from "@/components/LayoutWrapper";
 // import profileAboutImg from "@/public/images/masha.webp";
-import profileAboutImg from "@/public/images/aboutPhoto.jpg";
+import profileAboutImg from "/public/images/aboutPhoto.jpg";
 import Image from "next/image";
 import TransitionEffect from "@/components/TransitionEffect";
 import Experience from "@/components/Experience";
