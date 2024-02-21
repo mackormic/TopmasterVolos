@@ -14,10 +14,25 @@ import project5 from "@/public/Images/projectsImg/OIG8.png";
 import project6 from "@/public/Images/projectsImg/OIG10.png";
 import TransitionEffect from "@/components/TransitionEffect";
 import LayoutWrapper from "@/components/LayoutWrapper";
+import type { StaticImageData } from "next/image";
 
 const FramerImage = motion(Image);
 
-const FeatureProject = ({ type, title, img, summary, link }) => {
+const FeatureProject = ({
+  type,
+  title,
+  img,
+  summary,
+  link,
+  instagram,
+}: {
+  type: string;
+  title: string;
+  img: StaticImageData;
+  summary: string;
+  link: string;
+  instagram: string;
+}) => {
   return (
     <article
       className="w-full flex items-center justify-between
@@ -64,13 +79,13 @@ const FeatureProject = ({ type, title, img, summary, link }) => {
         />
         <div className="my-2 flex items-center">
           <motion.a
-            href="https://www.instagram.com/"
+            href={instagram}
             target={"_blank"}
             className="w-6 mx-1 "
             whileHover={{ y: -2, x: 2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <InstagramIcon />
+            <InstagramIcon className="" />
           </motion.a>
           <motion.a
             href={link}
@@ -88,7 +103,21 @@ const FeatureProject = ({ type, title, img, summary, link }) => {
   );
 };
 
-const Project = ({ type, title, img, link, text, instagram }) => {
+const Project = ({
+  type,
+  title,
+  img,
+  link,
+  text,
+  instagram,
+}: {
+  type: string;
+  title: string;
+  img: StaticImageData;
+  text: string;
+  link: string;
+  instagram: string;
+}) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl
@@ -145,7 +174,7 @@ const Project = ({ type, title, img, link, text, instagram }) => {
             Visit Insta
           </Link>
           <Link href={instagram} target="_blank" className="w-8 md:w-6">
-            <InstagramIcon />
+            <InstagramIcon className="" />
           </Link>
         </div>
       </div>
@@ -220,6 +249,7 @@ const Projects = () => {
                 link="https://www.instagram.com/"
                 instagram="https://www.instagram.com/"
                 type="Сертификат"
+                text=""
               />
             </div>
             <div className="col-span-12 sm:col-span-6">
@@ -229,6 +259,7 @@ const Projects = () => {
                 link="https://www.instagram.com/"
                 instagram="https://www.instagram.com/"
                 type="Консультация"
+                text=""
               />
             </div>
           </div>

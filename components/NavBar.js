@@ -18,15 +18,7 @@ import {
   TelegramIcon,
 } from "./Icon";
 
-const CustomLink = ({
-  href,
-  title,
-  className = "",
-}: {
-  href: string;
-  title: string;
-  className: string;
-}) => {
+const CustomLink = ({ href, title, className = "" }) => {
   const path = usePathname();
 
   return (
@@ -124,7 +116,7 @@ const NavBar = () => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <TelegramIcon />
+            <TelegramIcon className="" />
           </motion.a>
 
           <motion.a
@@ -134,7 +126,7 @@ const NavBar = () => {
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
-            <InstagramIcon />
+            <InstagramIcon className="" />
           </motion.a>
 
           <button
@@ -196,7 +188,7 @@ const NavBar = () => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <TelegramIcon />
+              <TelegramIcon className="" />
             </motion.a>
 
             <motion.a
@@ -206,7 +198,7 @@ const NavBar = () => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <InstagramIcon />
+              <InstagramIcon className="" />
             </motion.a>
 
             <button

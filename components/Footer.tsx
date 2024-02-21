@@ -22,7 +22,7 @@ const Footer = () => {
             target={"_blank"}
           >
             <span className="text-primary dark:text-primaryDark">
-              <InstagramIcon />
+              <InstagramIcon className="" />
             </span>
             topmaster_volos
           </Link>{" "}
