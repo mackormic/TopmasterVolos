@@ -1,13 +1,20 @@
+"use client";
 import Image from "next/image";
+import React, { useState } from "react";
 import contactImg from "@/public/Images/contactsImg/12.png";
-
 import LayoutWrapper from "@/components/LayoutWrapper";
-import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icon";
 import TransitionEffect from "@/components/TransitionEffect";
+import { motion } from "framer-motion";
 
 const Contacts = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
   return (
     <>
       <TransitionEffect />
@@ -16,6 +23,7 @@ const Contacts = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-2">
             <div className="w-full md:w-1/2 ">
               <Image
+                priority={true}
                 src={contactImg}
                 alt="codeBucks"
                 className="w-full h-auto hidden lg:inline-block"
@@ -62,6 +70,27 @@ const Contacts = () => {
                 </span>
                 topmaster_volos@gmail.com
               </Link>
+              {/* <button
+                onClick={handleClick}
+                className="flex items-center mt-4 bg-dark text-light dark:bg-light dark:text-dark px-4 rounded-lg md:text-lg font-semibold
+                   hover:bg-light hover:text-dark
+                   border-2 border-solid border-transparent hover:border-dark
+                    dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
+                    p-2 md:p-2.5 md:px-6 text-base"
+              >
+                Записаться <LinkArrow className="w-6 ml-1" />
+              </button>
+              {isOpen ? (
+                <motion.div
+                  initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className="min-w-[70vw] flex flex-col justify-between items-center 
+      fixed top-1/2 left-1/2 z-10 translate-x-[-50%] translate-y-[-50%]
+      bg-dark/50 dark:bg-light/75 rounded-lg py-32 backdrop-blur-md"
+                >
+                  <h1>Hi</h1>
+                </motion.div>
+              ) : null} */}
             </div>
           </div>
         </LayoutWrapper>

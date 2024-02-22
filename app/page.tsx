@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImg from "@/public/images/developer-pic-1.png";
+
 import myprofileImg from "@/public/Images/1.png";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import AnimatedText from "@/components/AnimatedText";
@@ -17,13 +17,13 @@ export default function Home() {
             <div className="w-full md:w-1/2 ">
               <Image
                 src={myprofileImg}
-                alt="codeBucks"
+                alt="profilePhoto"
                 className="w-full h-auto"
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center ">
               <AnimatedText
-                text="Избавлю от утюжка, пуха и сухости"
+                text="Создаю здоровые и шикарные волосы!"
                 className="!text-3xl md:!text-5xl lg:!text-6xl  xl:!text-6xl   !text-center
                 xl:!text-left lg:!text-center   "
               />
@@ -49,7 +49,7 @@ export default function Home() {
                 </Link>
                 <Link
                   className="ml-4  font-medium capitalize underline text-dark  dark:text-light text-base md:text-lg"
-                  href="mailto:tick16@yandex.ru"
+                  href="https://www.instagram.com/topmaster_volos/"
                   target="_blank"
                 >
                   Contact

@@ -4,7 +4,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 
-import { GithubIcon, InstagramIcon } from "@/components/Icon";
+import { InstagramIcon } from "@/components/Icon";
 import { motion } from "framer-motion";
 import project1 from "@/public/Images/projectsImg/OIG1.jpg";
 import project2 from "@/public/Images/projectsImg/OIG3.jpg";
@@ -24,14 +24,12 @@ const FeatureProject = ({
   img,
   summary,
   link,
-  instagram,
 }: {
   type: string;
   title: string;
   img: StaticImageData;
   summary: string;
   link: string;
-  instagram: string;
 }) => {
   return (
     <article
@@ -79,7 +77,7 @@ const FeatureProject = ({
         />
         <div className="my-2 flex items-center">
           <motion.a
-            href={instagram}
+            href={link}
             target={"_blank"}
             className="w-6 mx-1 "
             whileHover={{ y: -2, x: 2 }}
@@ -109,14 +107,12 @@ const Project = ({
   img,
   link,
   text,
-  instagram,
 }: {
   type: string;
   title: string;
   img: StaticImageData;
   text: string;
   link: string;
-  instagram: string;
 }) => {
   return (
     <article
@@ -173,7 +169,7 @@ const Project = ({
           >
             Visit Insta
           </Link>
-          <Link href={instagram} target="_blank" className="w-8 md:w-6">
+          <Link href={link} target="_blank" className="w-8 md:w-6">
             <InstagramIcon className="" />
           </Link>
         </div>
@@ -205,8 +201,7 @@ const Projects = () => {
                 Осмотр кожи под трихоскопом в подарок.
                 Преддлжение ддя любой длины и густоты
                 "
-                link="https://www.instagram.com/"
-                instagram="https://www.instagram.com/"
+                link="https://www.instagram.com/p/C215JnvtLSv/"
                 type="Весенний комплекс"
               />
             </div>
@@ -214,8 +209,7 @@ const Projects = () => {
               <Project
                 img={project2}
                 title="«Блондинкам можно всё»"
-                link="https://www.instagram.com/"
-                instagram="https://www.instagram.com/"
+                link="https://www.instagram.com/reel/C3W9HMINs3Z/"
                 type="Комплекс"
                 text="220 рублей"
               />
@@ -225,8 +219,7 @@ const Projects = () => {
               <Project
                 img={project3}
                 title="Выпрямляем и питаем"
-                link="https://www.instagram.com/"
-                instagram="https://www.instagram.com/"
+                link="https://www.instagram.com/topmaster_volos/"
                 type="Комплекс"
                 text="250 рублей"
               />
@@ -237,8 +230,7 @@ const Projects = () => {
                 title="Кудри или неКудри"
                 summary="Кудрявые волосы - естественно надо выпрямить, прямые волосы - естественно надо окудрить
                 "
-                link="https://www.instagram.com/"
-                instagram="https://www.instagram.com/"
+                link="https://www.instagram.com/stories/highlights/18004128095291139/"
                 type="Специальный комплекс"
               />
             </div>
@@ -246,8 +238,7 @@ const Projects = () => {
               <Project
                 img={project5}
                 title="Любая процедура"
-                link="https://www.instagram.com/"
-                instagram="https://www.instagram.com/"
+                link="https://www.instagram.com/p/CbpIc6boWjA/"
                 type="Сертификат"
                 text=""
               />
@@ -256,8 +247,7 @@ const Projects = () => {
               <Project
                 img={project6}
                 title="Бесплатная консультация"
-                link="https://www.instagram.com/"
-                instagram="https://www.instagram.com/"
+                link="https://www.instagram.com/p/CzoFvufNvgM/"
                 type="Консультация"
                 text=""
               />

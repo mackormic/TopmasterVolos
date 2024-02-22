@@ -6,17 +6,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  PinterestIcon,
-  TwitterIcon,
-  InstagramIcon,
-  SunIcon,
-  TelegramIcon,
-} from "./Icon";
+import { MoonIcon, InstagramIcon, SunIcon, TelegramIcon } from "./Icon";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const path = usePathname();
@@ -102,10 +92,10 @@ const NavBar = () => {
 
       <div className="w-full lg:flex justify-between items-center hidden">
         <nav>
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mr-4" />
-          <CustomLink href="/projects" title="Projects" className="mr-4" />
-          <CustomLink href="/contacts" title="Contacts" className="mr-4" />
+          <CustomLink href="/" title="Главная" className="mr-4" />
+          <CustomLink href="/about" title="О себе" className="mr-4" />
+          <CustomLink href="/projects" title="Процедуры" className="mr-4" />
+          <CustomLink href="/contacts" title="Контакты" className="mr-4" />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -120,7 +110,7 @@ const NavBar = () => {
           </motion.a>
 
           <motion.a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/topmaster_volos/"
             target={"_blank"}
             className="w-6 mx-1 sm:ml-2"
             whileHover={{ y: -2 }}
@@ -192,7 +182,7 @@ const NavBar = () => {
             </motion.a>
 
             <motion.a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/topmaster_volos/"
               target={"_blank"}
               className="w-6 mx-2 sm:mx-3 text-light dark:text-dark"
               whileHover={{ y: -2 }}

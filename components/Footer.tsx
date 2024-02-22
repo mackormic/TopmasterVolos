@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex items-center md:py-2">
           <Link
             className="flex items-center "
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/topmaster_volos/"
             target={"_blank"}
           >
             <span className="text-primary dark:text-primaryDark">
@@ -31,7 +31,7 @@ const Footer = () => {
         <Link
           href="tel:+375295760929"
           target="_blank"
-          className="text-dark/75 dark:text-light/75"
+          className="text-dark/75 dark:text-light/75 "
         >
           <span className="text-primary dark:text-primaryDark text-2xl px-1">
             ✎
