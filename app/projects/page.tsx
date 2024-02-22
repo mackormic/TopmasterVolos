@@ -189,7 +189,7 @@ const Projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <LayoutWrapper className="pt-16">
           <AnimatedText
-            className="!text-6xl    xl:!text-8xl  mb-8 sm:mb-16  "
+            className="!text-4xl md:!text-6xl   xl:!text-8xl  mb-8 sm:mb-16  "
             text="Комплексные предложения для Вас"
           />
 

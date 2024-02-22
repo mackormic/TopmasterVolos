@@ -60,7 +60,7 @@ const Experience = () => {
 
   return (
     <div className="my-32 md:mb-4">
-      <h2 className="font-bold text-center sm:text-6xl md:text-8xl w-full mb-16 md:mb-20  ">
+      <h2 className="font-bold text-center text-4xl md:text-8xl w-full mb-16 md:mb-20  ">
         Exper
         <span className="text-primary dark:text-primaryDark">i</span>
         ence
