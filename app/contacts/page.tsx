@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import contactImg from "@/public/Images/contactsImg/12.png";
 import LayoutWrapper from "@/components/LayoutWrapper";
+import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icon";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -70,6 +71,7 @@ const Contacts = () => {
                 </span>
                 topmaster_volos@gmail.com
               </Link>
+              <ContactForm />
               {/* <button
                 onClick={handleClick}
                 className="flex items-center mt-4 bg-dark text-light dark:bg-light dark:text-dark px-4 rounded-lg md:text-lg font-semibold
@@ -88,7 +90,7 @@ const Contacts = () => {
       fixed top-1/2 left-1/2 z-10 translate-x-[-50%] translate-y-[-50%]
       bg-dark/50 dark:bg-light/75 rounded-lg py-32 backdrop-blur-md"
                 >
-                  <h1>Hi</h1>
+                  <ContactForm />
                 </motion.div>
               ) : null} */}
             </div>

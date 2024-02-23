@@ -146,25 +146,25 @@ const NavBar = () => {
           <nav className="flex flex-col justify-between items-center">
             <CustomMobileLink
               href="/"
-              title="Home"
+              title="Главная"
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/about"
-              title="About"
+              title="О себе"
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
-              title="Projects"
+              title="Процедуры"
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/contacts"
-              title="Contacts"
+              title="Контакты"
               className=""
               toggle={handleClick}
             />

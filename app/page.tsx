@@ -49,10 +49,10 @@ export default function Home() {
                 </Link>
                 <Link
                   className="ml-4  font-medium capitalize underline text-dark  dark:text-light text-base md:text-lg"
-                  href="https://www.instagram.com/topmaster_volos/"
+                  href="/contacts"
                   target="_blank"
                 >
-                  Contact
+                  Контакты
                 </Link>
               </div>
             </div>
