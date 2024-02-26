@@ -62,7 +62,9 @@ const ContactForm = () => {
   };
   return (
     <div className="flex items-center flex-col mt-8">
-      <h1>Можете также оставить свою заявку здесь и я с Вами свяжусь</h1>
+      <h1 className="text-center">
+        Можете также оставить свою заявку здесь и я с Вами свяжусь
+      </h1>
       <hr />
       <form
         onSubmit={handleOnSubmit}
@@ -95,7 +97,7 @@ const ContactForm = () => {
           onChange={handleOnChange}
           required
           value={inputs.message}
-          className="border-[1px] border-dark/75 dark:border-light/75 bg-light dark:bg-dark rounded-xl p-2 text-[8px] text-center w-full"
+          className="overflow-hidden border-[1px] border-dark/75 dark:border-light/75 bg-light dark:bg-dark rounded-xl p-2 text-[8px] text-center w-full"
         />
 
         <button

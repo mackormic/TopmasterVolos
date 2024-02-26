@@ -23,9 +23,9 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center self-center ">
               <AnimatedText
-                text="Создаю здоровые и шикарные волосы!"
+                text="Верну здоровье Вашим волосам!"
                 className="!text-3xl md:!text-5xl lg:!text-6xl  xl:!text-6xl   !text-center
-                xl:!text-left lg:!text-center   "
+                xl:!text-left lg:!text-center"
               />
 
               <p className="my-4 text-xs  sm:text-sm md:text-base  font-medium ">

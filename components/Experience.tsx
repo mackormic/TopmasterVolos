@@ -32,15 +32,12 @@ const Details = ({
         whileInView={{ y: 0 }}
         transition={{ type: "spring" }}
       >
-        <h3 className="font-bold text-xs sm:text-lg md-text-2xl">
+        <h3 className="font-bold text-lg md-text-2xl">
           {position}&nbsp;
-          <a
-            href={companyLink}
-            target="_blank"
-            className="text-primary capitalize dark:text-primaryDark"
-          >
+          <br />
+          <p className="text-primary capitalize dark:text-primaryDark">
             {company}
-          </a>
+          </p>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {address} | {time}
@@ -83,7 +80,7 @@ const Experience = () => {
             companyLink="www.google.com"
             time="Зима 2021"
             address="Минск"
-            work='Успешно прошла полный курс обучения "Все что нужно знать о кератине ботоксе и нанопластике" '
+            work='Успешно прошла полный курс обучения "Все, что нужно знать о кератине ботоксе и нанопластике" '
           />
           <Details
             position="Мастер"
@@ -102,12 +99,12 @@ const Experience = () => {
             time="Весна 2022"
             address="Минск"
             work='Успешно прошла авторский курс "Топ-мастер о котором мечтают клиенты". 
-            5-ступенчатое система диагности волос. Разбор химических составов. Авторская техника выполнения процедур.
-            Навыки взпимодействия с клиентом'
+            5-ступенчатая система диагности волос. Разбор химических составов. Авторская техника выполнения процедур.
+            Навыки взаимодействия с клиентом'
           />
           <Details
-            position="Экперт в сфере волос"
-            company="технолог: Виткория Лисецкая"
+            position="Эксперт в сфере волос"
+            company="технолог: Виктория Лисецкая"
             companyLink="www.google.com"
             time="Лето 2022"
             address="Минск"
@@ -115,7 +112,7 @@ const Experience = () => {
             Авторская техника выполнения процедур. Работа с подложками Limba Cosmetics"
           />
           <Details
-            position="Экперт в сфере волос"
+            position="Эксперт в сфере волос"
             company="международный технолог: Валерия Низовая"
             companyLink="www.google.com"
             time="Лето 2023"
@@ -125,7 +122,7 @@ const Experience = () => {
             '
           />
           <Details
-            position="Экперт в сфере волос"
+            position="Эксперт в сфере волос"
             company="международный технолог: Валерия Субботина"
             companyLink="www.google.com"
             time="Осень 2023"
@@ -135,7 +132,7 @@ const Experience = () => {
             '
           />
           <Details
-            position="Экперт в сфере волос"
+            position="Эксперт в сфере волос"
             company="технолог-колорист: Ксения Зубарик"
             companyLink="https://www.instagram.com/p/C0Ezq69t4mB/"
             time="Осень 2023"
