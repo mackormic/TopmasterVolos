@@ -42,7 +42,7 @@ const Contacts = () => {
                 <span className="text-primary dark:text-primaryDark text-2xl px-1">
                   ↳
                 </span>
-                BC Hermes, Kasinca 11a, Minsk
+                Bratskaya 15 str., Minsk
               </Link>
 
               <h2 className="font-bold text-lg uppercase text-dark/75 dark:text-light/75">
